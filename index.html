@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab 2" />
+    <title>Lab 2 Starter</title>
+    <link rel="icon" type="image/png" href="icons8-favicon-32.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1>This is the title for my Lab 2</h1>
+      <nav>
+        <a href="#about">About</a><br />
+        <a href="#lists">Lists</a><br />
+        <a href="#media">Media</a>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About This Page</h2>
+        <p>
+          I like <b>cats</b>
+          <strong>CATS ARE COOL</strong> and
+          <i>very cute</i> if you disagree <em>LEAVE</em>.
+        </p>
+
+      </section>
+
+      <section id="lists">
+        <h2>My Lists</h2>
+
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Cat</li>
+          <li>Cat 2</li>
+          <li>Cat 3</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>meow</li>
+          <li>miao</li>
+          <li>meeeow</li>
+        </ul>
+      </section>
+        <div class="main-container">
+          Main container for access, here's a
+          <span>cat image</span>.
+        </div>
+      <section id="media">
+        <h2>Media Section</h2>
+
+        <p>Here is an image of a cat:</p>
+        <img
+          src="./cat.jpg"
+          alt="A cat smiling"
+          width="300"
+        />
+
+        <p>Sorry.mp3:</p>
+        <audio controls>
+          <source src="sorry.mp3" type="audio/mpeg" />
+        Sure here's a song
+        </audio>
+
+        <p>video was too big:</p>
+        <video controls width="320">
+          <source src="sorry.mp4" type="video/mp4" />
+          Sure here's a video
+        </video>
+      </section>
+
+      <section>
+  <h2>Cat Form</h2>
+
+  <form>
+    <fieldset>
+      <legend>Favorite Cat Breed</legend>
+
+      <label for="cat-name">Cat name:</label>
+      <input type="text" id="cat-name" name="cat-name" />
+      <br /><br />
+
+      <label for="today-date">Today's date:</label>
+      <input type="date" id="today-date" name="today-date" />
+      <br /><br />
+
+      <p>Pick one cat breed:</p>
+      <input type="radio" id="siamese" name="breed" value="siamese" />
+      <label for="siamese">Siamese</label>
+      <br />
+
+      <input type="radio" id="persian" name="breed" value="persian" />
+      <label for="persian">Persian</label>
+      <br /><br />
+
+      <p>Cat traits:</p>
+      <input type="checkbox" id="fluffy" name="fluffy" />
+      <label for="fluffy">Fluffy</label>
+      <br />
+
+      <input type="checkbox" id="playful" name="playful" />
+      <label for="playful">Playful</label>
+      <br /><br />
+
+      <label for="cat-breed">Choose or type a breed:</label>
+      <input list="breeds" id="cat-breed" name="cat-breed" />
+      <datalist id="breeds">
+        <option value="Maine Coon"></option>
+        <option value="Bengal"></option>
+        <option value="Ragdoll"></option>
+        <option value="Sphynx"></option>
+      </datalist>
+      <br /><br />
+
+      <label for="favorite-breed">Favorite breed:</label>
+      <select id="favorite-breed" name="favorite-breed">
+        <option value="maine-coon">Maine Coon</option>
+        <option value="bengal">Bengal</option>
+        <option value="ragdoll">Ragdoll</option>
+      </select>
+      <br /><br />
+
+      <label for="cat-comments">Why do you like cats?</label>
+      <br />
+      <textarea id="cat-comments" name="cat-comments" rows="4" cols="30"></textarea>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</section>
+
+      <section>
+        <h2>More Information</h2>
+        <details>
+          <summary>Click to expand</summary>
+          <p>
+            info be hiding
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>footer</p>
+    </footer>
+  </body>
+</html>
